@@ -20,7 +20,20 @@ $ pod repo lint .
 **Pushing a pod to this repo**
 
 ```
+$ cd /path/to/your/lib
 $ pod repo push [REPO_NAME] [POD_NAME].podspec
 $ pod repo push mownier-specs mylib.podspec
+```
+
+**Setting up commit author**
+
+```
+$ cd ~/.cocoapods/repos/[REPO_NAME]
+$ git config user.email [YOUR_EMAIL]
+$ git config user.name [YOUR_NAME]
+
+$ cd ~/.cocoapods/repos/mownier-specs
+$ git config user.email "me@me.com"
+$ git config user.name "me"
 ```
 
